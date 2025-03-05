@@ -2,7 +2,7 @@ function jouer(choixJoueur) {
     let couleurs = ['rouge', 'noir'];
     let cartesRouges = ['coeur', 'carreau'];  // ♥ ♦
     let cartesNoires = ['pique', 'trefle'];  // ♠ ♣
-    let valeurs = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    let valeurs = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
 
     // Tirer une carte au hasard
     let couleurTirée = couleurs[Math.floor(Math.random() * couleurs.length)];
