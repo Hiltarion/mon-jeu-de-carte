@@ -19,9 +19,9 @@ function jouer(choixJoueur) {
 
     // Affichage du résultat
     if (choixJoueur === couleurTirée) {
-        resultat.innerHTML = `<h2>Bravo ! C'était ${valeur.toUpperCase()} ${symbole.toUpperCase()} 🎉</h2>`;
+        resultat.innerHTML = `<h2>Bravo ! tu donne ${valeur.toUpperCase()} gorgées ! 🎉</h2>`;
     } else {
-        resultat.innerHTML = `<h2>Raté... C'était ${valeur.toUpperCase()} ${symbole.toUpperCase()} 😢</h2>`;
+        resultat.innerHTML = `<h2>Raté... tu bois ${valeur.toUpperCase()} gorgées ! 😢</h2>`;
     }
 
     // Afficher l’image de la carte
