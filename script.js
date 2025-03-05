@@ -1,8 +1,8 @@
 function jouer(choixJoueur) {
     let couleurs = ['rouge', 'noir'];
-    let cartesRouges = ['hearts', 'diamonds'];  // ♥ ♦
-    let cartesNoires = ['spades', 'clubs'];  // ♠ ♣
-    let valeurs = ['ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen', 'king'];
+    let cartesRouges = ['H', 'D'];  // ♥ ♦
+    let cartesNoires = ['S', 'C'];  // ♠ ♣
+    let valeurs = ['A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K'];
 
     // Tirer une carte au hasard
     let couleurTirée = couleurs[Math.floor(Math.random() * couleurs.length)];
@@ -15,7 +15,7 @@ function jouer(choixJoueur) {
     let imageCarte = document.getElementById("imageCarte");
 
     // Construire le nom du fichier image (ex: 10_hearts.png)
-    let nomImage = `images/${valeur}_${symbole}.png`;
+    let nomImage = `images/${valeur}${symbole}.svg`;
 
     // Affichage du résultat
     if (choixJoueur === couleurTirée) {
