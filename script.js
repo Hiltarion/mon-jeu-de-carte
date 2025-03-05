@@ -1,7 +1,7 @@
 function jouer(choixJoueur) {
     let couleurs = ['rouge', 'noir'];
-    let cartesRouges = ['H', 'D'];  // ♥ ♦
-    let cartesNoires = ['S', 'C'];  // ♠ ♣
+    let cartesRouges = ['coeur', 'carreau'];  // ♥ ♦
+    let cartesNoires = ['pique', 'trefle'];  // ♠ ♣
     let valeurs = ['A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K'];
 
     // Tirer une carte au hasard
@@ -15,13 +15,13 @@ function jouer(choixJoueur) {
     let imageCarte = document.getElementById("imageCarte");
 
     // Construire le nom du fichier image (ex: 10_hearts.png)
-    let nomImage = `images/${valeur}${symbole}.svg`;
+    let nomImage = `images/${valeur}_${symbole}.svg`;
 
     // Affichage du résultat
     if (choixJoueur === couleurTirée) {
-        resultat.innerHTML = `<h2>Bravo ! tu donne ${valeur.toUpperCase()} gorgées ! 🎉</h2>`;
+        resultat.innerHTML = `<h2>Bravo ! tu donne 1 gorgées ! 🎉</h2>`;
     } else {
-        resultat.innerHTML = `<h2>Raté... tu bois ${valeur.toUpperCase()} gorgées ! 😢</h2>`;
+        resultat.innerHTML = `<h2>Raté... tu bois 1 gorgées ! 😢</h2>`;
     }
 
     // Afficher l’image de la carte
