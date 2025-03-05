@@ -14,7 +14,7 @@ function jouer(choixJoueur) {
     let resultat = document.getElementById("resultat");
     let imageCarte = document.getElementById("imageCarte");
 
-    // Construire le nom du fichier image (ex: 10_hearts.png)
+    // Construire le nom du fichier image (ex: 10_coeur.svg)
     let nomImage = `images/${valeur}_${symbole}.svg`;
 
     // Affichage du résultat
