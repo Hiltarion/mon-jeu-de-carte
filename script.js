@@ -3,6 +3,14 @@ function jouer(choixJoueur) {
     let cartesRouges = ['coeur', 'carreau'];  // ♥ ♦
     let cartesNoires = ['pique', 'trefle'];  // ♠ ♣
     let valeurs = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    
+    //afficher le dos de carte
+    window.onload = function() {
+    let imageCarte = document.getElementById("imageCarte");
+    imageCarte.src = "images/back.svg"; // Afficher le dos de la carte au départ
+    imageCarte.style.display = "block";
+};
+
 
     // Tirer une carte au hasard
     let couleurTirée = couleurs[Math.floor(Math.random() * couleurs.length)];
