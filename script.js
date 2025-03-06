@@ -1,3 +1,10 @@
+  //afficher le dos de carte
+    window.onload = function() {
+    let imageCarte = document.getElementById("imageCarte");
+    imageCarte.src = "images/back.svg"; // Afficher le dos de la carte au départ
+    imageCarte.style.display = "block";
+};
+
 function jouer(choixJoueur) {
     let couleurs = ['rouge', 'noir'];
     let cartesRouges = ['coeur', 'carreau'];  // ♥ ♦
@@ -29,9 +36,4 @@ function jouer(choixJoueur) {
     imageCarte.style.display = "block";
 }
 
-    //afficher le dos de carte
-    window.onload = function() {
-    let imageCarte = document.getElementById("imageCarte");
-    imageCarte.src = "images/back.svg"; // Afficher le dos de la carte au départ
-    imageCarte.style.display = "block";
-};
+  
