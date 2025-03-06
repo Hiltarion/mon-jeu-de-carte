@@ -43,5 +43,19 @@ function jouer(choixJoueur) {
     etape2.style.display = "block";
 }
 
+function verifierFamille(familleChoisie) {
+    let imageCarte = document.getElementById("imageCarte");
+    let familleCorrecte = imageCarte.getAttribute("data-famille");
+    let resultat = document.getElementById("resultat");
+
+    if (familleChoisie === familleCorrecte) {
+        resultat.innerHTML = `<h2>Bravo ! Tu as trouvé la bonne famille ! 🎉</h2>`;
+    } else {
+        resultat.innerHTML = `<h2>Raté... c'était ${familleCorrecte.toUpperCase()} ! 😢</h2>`;
+    }
+
+    // Cacher l'étape 2 après la réponse
+    document.getElementById("etape2").style.display = "none";
+}
 
   
